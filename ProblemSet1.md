@@ -38,5 +38,5 @@ And because of the definition of f, id1 and id2 we have:
 1. id2 . f (1) = id2(2) = 2 = f(1) so as 1 is the only possible value for f, id2 . f = f
 
 ## Question 3 : Yes
-f . g (d) = f(c) = d so f . g = id for d
-g . f (c) = g(d) = c so g . f = id for c
+* f . g (d) = f(c) = d so f . g = id for d
+* g . f (c) = g(d) = c so g . f = id for c
