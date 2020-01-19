@@ -45,10 +45,21 @@ Associativity is also trivial:
 ## Question 3 : Yes
 * f . g (d) = f(c) = d so f . g = id for d
 * g . f (c) = g(d) = c so g . f = id for c
- does not exist
+
 ## Question 4
 ### data with associative law but no unit law
 * <a href="https://www.codecogs.com/eqnedit.php?latex=Ob(c)&space;:=&space;{&space;i&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ob(c)&space;:=&space;{&space;i&space;}" title="Ob(c) := { i }" /></a>
 * <a href="https://www.codecogs.com/eqnedit.php?latex=C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" title="C(i,i) = \{ f_{n} \forall n >= 1 \}" /></a>
 * <a href="https://www.codecogs.com/eqnedit.php?latex=f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;&plus;&space;m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;&plus;&space;m}" title="f_{n} \cdot f_{m} = f_{n + m}" /></a>
 * all morphisms are identity but as  <a href="https://www.codecogs.com/eqnedit.php?latex=f_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{0}" title="f_{0}" /></a> does not exist, the unit law does not hold
+
+### data with no associative law but with unit law
+* <a href="https://www.codecogs.com/eqnedit.php?latex=Ob(c)&space;:=&space;{&space;i&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ob(c)&space;:=&space;{&space;i&space;}" title="Ob(c) := { i }" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=C(i,i)&space;=&space;\{id_{i},&space;f_{n}&space;\forall&space;n&space;\in&space;\mathbb{Z}&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C(i,i)&space;=&space;\{id_{i},&space;f_{n}&space;\forall&space;n&space;\in&space;\mathbb{Z}&space;\}" title="C(i,i) = \{id_{i}, f_{n} \forall n \in \mathbb{Z} \}" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;-&space;m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;-&space;m}" title="f_{n} \cdot f_{m} = f_{n - m}" /></a>
+* Unit law is verified by <a href="https://www.codecogs.com/eqnedit.php?latex=id_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_{i}" title="id_{i}" /></a>
+* Associative law does not work for the following example:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(f_{3}&space;\cdot&space;f_{1})&space;\cdot&space;f_{1}&space;=&space;f_{2}&space;-&space;f_{1}&space;=&space;f_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(f_{3}&space;\cdot&space;f_{1})&space;\cdot&space;f_{1}&space;=&space;f_{2}&space;-&space;f_{1}&space;=&space;f_{1}" title="(f_{3} \cdot f_{1}) \cdot f_{1} = f_{2} - f_{1} = f_{1}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" title="f_{3} \cdot (f_{1} \cdot f_{1}) = f_{3} - f_{0} = f_{2}" /></a>
