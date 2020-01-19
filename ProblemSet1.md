@@ -29,13 +29,18 @@ Ob(c) = { 1,2 }
 1. <a href="https://www.codecogs.com/eqnedit.php?latex=P(2,1)=\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(2,1)=\phi" title="P(2,1)=\emptyset" /></a>
 1. {<a href="https://www.codecogs.com/eqnedit.php?latex=P(2,2)=\{&space;id_{2}&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(2,2)=\{&space;id_{2}&space;\}" title="P(2,2)=\{ id_{2} \}" /></a>
 
-There are only 2 possible compositions:
+There are only 4 possible compositions:
 1. f . id1
 1. id2 . f
+1. id1 . id1
+1  id2 . id2
 
 And because of the definition of f, id1 and id2 we have:
 1. f . id1 (1) = f(1) so as 1 is the only possible value for f, f . id1 = f
 1. id2 . f (1) = id2(2) = 2 = f(1) so as 1 is the only possible value for f, id2 . f = f
+
+Associativity is also trivial:
+1. (f . id1) . id1 = f . id1 = f . (id1 . id1)
 
 ## Question 3 : Yes
 * f . g (d) = f(c) = d so f . g = id for d
