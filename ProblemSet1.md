@@ -45,3 +45,10 @@ Associativity is also trivial:
 ## Question 3 : Yes
 * f . g (d) = f(c) = d so f . g = id for d
 * g . f (c) = g(d) = c so g . f = id for c
+ does not exist
+## Question 4
+### data with associative law but no unit law
+* <a href="https://www.codecogs.com/eqnedit.php?latex=Ob(c)&space;:=&space;{&space;i&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ob(c)&space;:=&space;{&space;i&space;}" title="Ob(c) := { i }" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" title="C(i,i) = \{ f_{n} \forall n >= 1 \}" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;&plus;&space;m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{n}&space;\cdot&space;f_{m}&space;=&space;f_{n&space;&plus;&space;m}" title="f_{n} \cdot f_{m} = f_{n + m}" /></a>
+* all morphisms are identity but as  <a href="https://www.codecogs.com/eqnedit.php?latex=f_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{0}" title="f_{0}" /></a> does not exist, the unit law does not hold
