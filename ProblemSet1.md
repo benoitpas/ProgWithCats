@@ -24,10 +24,10 @@ Prelude> i 2
 Ob(c) = { 1,2 }
 
 4 morphisms
-1. {(1 -> 1),(2 -> 1)}
-1. {(1 -> 1),(2 -> 2)}
-1. {(1 -> 2),(2 -> 1)}
-1. {(1 -> 2),(2 -> 2)}
+1. <a href="https://www.codecogs.com/eqnedit.php?latex=P(1,1)=\{&space;id_{1}&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(1,1)=\{&space;id_{1}&space;\}" title="P(1,1)=\{ id_{1} \}" /></a>
+1. <a href="https://www.codecogs.com/eqnedit.php?latex=P(1,2)=\{&space;f&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(1,2)=\{&space;f&space;\}" title="P(1,2)=\{ f \}" /></a>
+1. <a href="https://www.codecogs.com/eqnedit.php?latex=P(2,1)=\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(2,1)=\phi" title="P(2,1)=\phi" /></a>
+1. {<a href="https://www.codecogs.com/eqnedit.php?latex=P(2,2)=\{&space;id_{2}&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(2,2)=\{&space;id_{2}&space;\}" title="P(2,2)=\{ id_{2} \}" /></a>
 
 There are only 2 possible compositions:
 1. f . id1
