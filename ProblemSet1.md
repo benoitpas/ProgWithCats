@@ -66,8 +66,10 @@ Associativity is also trivial:
 
 
 ## Question 5
-### (a) (N,+,0) is a monoid because 0 is the unit for the addition and the addition is associative
-### (b) (List{0,1),concatenation,[]) is a monoid because 
+### (a)
+<a href="https://www.codecogs.com/eqnedit.php?latex=(\mathbb{N},&plus;,0)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\mathbb{N},&plus;,0)" title="(\mathbb{N},+,0)" /></a> is a monoid because 0 is the unit for the addition and the addition is associative
+### (b) 
+<a href="https://www.codecogs.com/eqnedit.php?latex=(List_{\{0,1\}},concatenation,[])" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(List_{\{0,1\}},concatenation,[])" title="(List_{\{0,1\}},concatenation,[])" /></a> is a monoid because 
 * adding an empty string to a string doesn't change the initial string (Unit law)
 * concatenation is associative
 ### (c)
