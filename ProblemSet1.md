@@ -63,3 +63,20 @@ Associativity is also trivial:
 <a href="https://www.codecogs.com/eqnedit.php?latex=(f_{3}&space;\cdot&space;f_{1})&space;\cdot&space;f_{1}&space;=&space;f_{2}&space;-&space;f_{1}&space;=&space;f_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(f_{3}&space;\cdot&space;f_{1})&space;\cdot&space;f_{1}&space;=&space;f_{2}&space;-&space;f_{1}&space;=&space;f_{1}" title="(f_{3} \cdot f_{1}) \cdot f_{1} = f_{2} - f_{1} = f_{1}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" title="f_{3} \cdot (f_{1} \cdot f_{1}) = f_{3} - f_{0} = f_{2}" /></a>
+
+
+## Question 5
+### (a) (N,+,0) is a monoid because 0 is the unit for the addition and the addition is associative
+### (b) (List{0,1),concatenation,[]) is a monoid because 
+* adding an empty string to a string doesn't change the initial string (Unit law)
+* concatenation is associative
+### (c)
+For every monoid <a href="https://www.codecogs.com/eqnedit.php?latex=(M,*,e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(M,*,e)" title="(M,*,e)" /></a> we can create a category such as:
+1. <a href="https://www.codecogs.com/eqnedit.php?latex=Ob(c)={i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ob(c)={i}" title="Ob(c)={i}" /></a>
+2. <a href="https://www.codecogs.com/eqnedit.php?latex=C(i,i)&space;=&space;\{&space;f_{m}&space;\forall&space;m&space;\in&space;\mathbb{M}&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C(i,i)&space;=&space;\{&space;f_{m}&space;\forall&space;m&space;\in&space;\mathbb{M}&space;\}" title="C(i,i) = \{ f_{m} \forall m \in \mathbb{M} \}" /></a>
+3. <a href="https://www.codecogs.com/eqnedit.php?latex=f_{m}&space;\cdot&space;f_{n}&space;=&space;f_{m*n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{m}&space;\cdot&space;f_{n}&space;=&space;f_{m*n}" title="f_{m} \cdot f_{n} = f_{m*n}" /></a>
+4. <a href="https://www.codecogs.com/eqnedit.php?latex=id_{i}&space;=&space;f_{e}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_{i}&space;=&space;f_{e}" title="id_{i} = f_{e}" /></a>
+
+Unit: We have <a href="https://www.codecogs.com/eqnedit.php?latex=id_{i}&space;\cdot&space;f_{m}&space;=&space;f_{e}&space;\cdot&space;f_{m}&space;=&space;f_{e*m}&space;=&space;f_{m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_{i}&space;\cdot&space;f_{m}&space;=&space;f_{e}&space;\cdot&space;f_{m}&space;=&space;f_{e*m}&space;=&space;f_{m}" title="id_{i} \cdot f_{m} = f_{e} \cdot f_{m} = f_{e*m} = f_{m}" /></a> (demonstrating the other rule is exactly the same)
+
+Associative: <a href="https://www.codecogs.com/eqnedit.php?latex=(f_{m}&space;\cdot&space;f_{n})&space;\cdot&space;f_{k}&space;=&space;f_{m*n}&space;\cdot&space;f_{k}&space;=&space;f_{(m*m)*k}&space;=&space;f_{m*(n*k)}&space;=&space;f_{m}&space;\cdot&space;f_{n*k}&space;=&space;f_{m}&space;\cdot&space;(f_{n}&space;\cdot&space;f_{k})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(f_{m}&space;\cdot&space;f_{n})&space;\cdot&space;f_{k}&space;=&space;f_{m*n}&space;\cdot&space;f_{k}&space;=&space;f_{(m*m)*k}&space;=&space;f_{m*(n*k)}&space;=&space;f_{m}&space;\cdot&space;f_{n*k}&space;=&space;f_{m}&space;\cdot&space;(f_{n}&space;\cdot&space;f_{k})" title="(f_{m} \cdot f_{n}) \cdot f_{k} = f_{m*n} \cdot f_{k} = f_{(m*m)*k} = f_{m*(n*k)} = f_{m} \cdot f_{n*k} = f_{m} \cdot (f_{n} \cdot f_{k})" /></a>
