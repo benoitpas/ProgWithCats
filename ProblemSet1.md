@@ -94,5 +94,5 @@ is a morphism  then it exists <a href="https://www.codecogs.com/eqnedit.php?late
 
 Similarly it exists <a href="https://www.codecogs.com/eqnedit.php?latex=m&space;\in&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m&space;\in&space;\mathbb{N}" title="m \in \mathbb{N}" /></a> such as <a href="https://www.codecogs.com/eqnedit.php?latex=m*b&space;=&space;c" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m*b&space;=&space;c" title="m*b = c" /></a>
 
-So we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m*b&space;=&space;m*n*a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c&space;=&space;m*b&space;=&space;m*n*a" title="c = m*b = m*n*a" /></a> which means y \cdot x : a \rightarrow c is a morphism
+So we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m*b&space;=&space;m*n*a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c&space;=&space;m*b&space;=&space;m*n*a" title="c = m*b = m*n*a" /></a> which means <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;\cdot&space;x&space;:&space;a&space;\rightarrow&space;c" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;\cdot&space;x&space;:&space;a&space;\rightarrow&space;c" title="y \cdot x : a \rightarrow c" /></a> is a morphism
 
