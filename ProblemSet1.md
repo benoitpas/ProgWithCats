@@ -85,10 +85,14 @@ Associative: <a href="https://www.codecogs.com/eqnedit.php?latex=(f_{m}&space;\c
 
 ## Question 6
 ### a)
-<a href="https://www.codecogs.com/eqnedit.php?latex=P(12,12)&space;=&space;{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(12,12)&space;=&space;{1}" title="P(12,12) = {1}" /></a>
+1 is the identify
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(12,12)&space;=&space;\{1\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(12,12)&space;=&space;\{1\}" title="P(12,12) = \{1\}" /></a>
 ### b)
 If <a href="https://www.codecogs.com/eqnedit.php?latex=x:a&space;\rightarrow&space;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x:a&space;\rightarrow&space;b" title="x:a \rightarrow b" /></a>
 is a morphism  then it exists <a href="https://www.codecogs.com/eqnedit.php?latex=n&space;\in&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n&space;\in&space;\mathbb{N}" title="n \in \mathbb{N}" /></a> such as <a href="https://www.codecogs.com/eqnedit.php?latex=n*a&space;=&space;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n*a&space;=&space;b" title="n*a = b" /></a>
+
 Similarly it exists <a href="https://www.codecogs.com/eqnedit.php?latex=m&space;\in&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m&space;\in&space;\mathbb{N}" title="m \in \mathbb{N}" /></a> such as <a href="https://www.codecogs.com/eqnedit.php?latex=m*b&space;=&space;c" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m*b&space;=&space;c" title="m*b = c" /></a>
-so we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m*b&space;=&space;m*n*a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c&space;=&space;m*b&space;=&space;m*n*a" title="c = m*b = m*n*a" /></a> which means y \cdot x : a \rightarrow c is a morphism
+
+So we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m*b&space;=&space;m*n*a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c&space;=&space;m*b&space;=&space;m*n*a" title="c = m*b = m*n*a" /></a> which means y \cdot x : a \rightarrow c is a morphism
 
