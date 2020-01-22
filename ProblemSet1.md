@@ -123,3 +123,20 @@ I tried 2 different ways to evaluate the expressions:
 = \x (\y x)
 = True
 
+## Question 8: Y Combinator
+Y g = \f ((\x f(x x))(\x f(x x))) g
+
+Y g = ((\x g(x x))(\x g(x x)))
+
+Y g = g(\x g(x x) \x g(x x))
+
+Y g = g(Y g)
+
+so if replace again Y g on the right by its value:
+
+Y g = g(g(Y g))
+
+and so on:
+Y g = g(g(g ....g(g(Y g)))))...
+
+Y g computes the fixed point of g
