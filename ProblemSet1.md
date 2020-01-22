@@ -4,7 +4,7 @@ Questions are from:
 
 http://brendanfong.com/programmingcats_files/ps1.pdf
 
-## Question 1
+## Question 1: Functions in Haskell
 
 ```haskell
 $ ghci
@@ -42,11 +42,12 @@ And because of the definition of f, id1 and id2 we have:
 Associativity is also trivial:
 1. (f . id1) . id1 = f . id1 = f . (id1 . id1)
 
-## Question 3 : Yes
+## Question 3 : Isomorphism ?
+Yes
 * f . g (d) = f(c) = d so f . g = id for d
 * g . f (c) = g(d) = c so g . f = id for c
 
-## Question 4
+## Question 4: Almost categories
 ### data with associative law but no unit law
 * <a href="https://www.codecogs.com/eqnedit.php?latex=Ob(c)&space;:=&space;{&space;i&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ob(c)&space;:=&space;{&space;i&space;}" title="Ob(c) := { i }" /></a>
 * <a href="https://www.codecogs.com/eqnedit.php?latex=C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C(i,i)&space;=&space;\{&space;f_{n}&space;\forall&space;n&space;>=&space;1&space;\}" title="C(i,i) = \{ f_{n} \forall n >= 1 \}" /></a>
@@ -65,7 +66,7 @@ Associativity is also trivial:
 <a href="https://www.codecogs.com/eqnedit.php?latex=f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{3}&space;\cdot&space;(f_{1}&space;\cdot&space;f_{1})&space;=&space;f_{3}&space;-&space;f_{0}&space;=&space;f_{2}" title="f_{3} \cdot (f_{1} \cdot f_{1}) = f_{3} - f_{0} = f_{2}" /></a>
 
 
-## Question 5
+## Question 5: Monoids
 ### (a)
 <a href="https://www.codecogs.com/eqnedit.php?latex=(\mathbb{N},&plus;,0)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\mathbb{N},&plus;,0)" title="(\mathbb{N},+,0)" /></a> is a monoid because 0 is the unit for the addition and the addition is associative
 ### (b) 
@@ -83,7 +84,7 @@ Unit: We have <a href="https://www.codecogs.com/eqnedit.php?latex=id_{i}&space;\
 
 Associative: <a href="https://www.codecogs.com/eqnedit.php?latex=(f_{m}&space;\cdot&space;f_{n})&space;\cdot&space;f_{k}&space;=&space;f_{m*n}&space;\cdot&space;f_{k}&space;=&space;f_{(m*m)*k}&space;=&space;f_{m*(n*k)}&space;=&space;f_{m}&space;\cdot&space;f_{n*k}&space;=&space;f_{m}&space;\cdot&space;(f_{n}&space;\cdot&space;f_{k})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(f_{m}&space;\cdot&space;f_{n})&space;\cdot&space;f_{k}&space;=&space;f_{m*n}&space;\cdot&space;f_{k}&space;=&space;f_{(m*m)*k}&space;=&space;f_{m*(n*k)}&space;=&space;f_{m}&space;\cdot&space;f_{n*k}&space;=&space;f_{m}&space;\cdot&space;(f_{n}&space;\cdot&space;f_{k})" title="(f_{m} \cdot f_{n}) \cdot f_{k} = f_{m*n} \cdot f_{k} = f_{(m*m)*k} = f_{m*(n*k)} = f_{m} \cdot f_{n*k} = f_{m} \cdot (f_{n} \cdot f_{k})" /></a>
 
-## Question 6
+## Question 6: Preorders
 ### a)
 1 is the identify
 
@@ -99,7 +100,7 @@ So we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m
 ### c)
 There is an issue with 0 because <a href="https://www.codecogs.com/eqnedit.php?latex=P(0,n)&space;=&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(0,n)&space;=&space;\mathbb{N}" title="P(0,n) = \mathbb{N}" /></a> (<a href="https://www.codecogs.com/eqnedit.php?latex=\forall&space;i&space;\in&space;\mathbb{N},&space;0*i=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\forall&space;i&space;\in&space;\mathbb{N},&space;0*i=0" title="\forall i \in \mathbb{N}, 0*i=0" /></a>) so there is more than one morphism so it cannot be a pre order.
 
-## Question 7 Church Booleans
+## Question 7: Church Booleans
 
 I tried 2 different ways to evaluate the expressions:
 
