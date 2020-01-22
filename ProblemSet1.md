@@ -98,3 +98,27 @@ So we have <a href="https://www.codecogs.com/eqnedit.php?latex=c&space;=&space;m
 
 ### c)
 There is an issue with 0 because <a href="https://www.codecogs.com/eqnedit.php?latex=P(0,n)&space;=&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(0,n)&space;=&space;\mathbb{N}" title="P(0,n) = \mathbb{N}" /></a> (<a href="https://www.codecogs.com/eqnedit.php?latex=\forall&space;i&space;\in&space;\mathbb{N},&space;0*i=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\forall&space;i&space;\in&space;\mathbb{N},&space;0*i=0" title="\forall i \in \mathbb{N}, 0*i=0" /></a>) so there is more than one morphism so it cannot be a pre order.
+
+## Question 7 Church Booleans
+
+I tried 2 different ways to evaluate the expressions:
+
+* (AND True) False 
+= ((\p (\q (pq) p) True) False 
+= ((\q (False q) False) True) 
+= (False True) False
+= ((\x (\y x)) True) False
+= (\y False) True
+= False
+
+* (OR False)
+=(\p (\q (pp)q)) \x (\y y)
+=(\q ((\x (\y y)) \x2 (\y2 y2)) q)
+=(\q (\y y) q)
+
+(OR False) True
+=(\q (\y y) q) 
+=(\y y) \x (\y2 x)
+= \x (\y x)
+= True
+
