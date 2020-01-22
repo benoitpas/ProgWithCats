@@ -140,3 +140,28 @@ and so on:
 Y g = g(g(g ....g(g(Y g)))))...
 
 Y g computes the fixed point of g
+
+## Question 9: Toy Category
+
+    data Objects = One | Two
+    data Functions = Id1 | Id2 | F
+    
+    instance Category Objects Functions where
+      dom mor = case mor of
+        Id1 -> One
+        Id2 -> Two
+        F -> One
+      cod mor = case mor of
+        Id1 -> One
+        Id2 -> Two
+        F -> Two
+      idy obj = case obj of
+        One -> Id1
+        Two -> Id2
+      cmp m1 m2 = case (m1,m2) of
+        (Id1,Id2) -> Nothing
+        (Id2,Id1) -> Nothing
+        (Id1,F) -> Nothing
+        (Id2,F) -> Just F
+        (F,Id1) -> Just F
+        (F,Id2) -> Nothing
