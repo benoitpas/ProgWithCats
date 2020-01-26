@@ -34,4 +34,9 @@ For  f : X → Y and g : Y → Z {\displaystyle g\colon Y\to Z, the possible com
 
 6. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '2' and all sets mapped to '3' and all morphisms from the empty set to a non empty set are mapped to 'b' 
 
+Question 2. Constant functors
+a. With <a href="https://www.codecogs.com/eqnedit.php?latex=K_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K_B" title="K_B" /></a> all elements are mapped to set<a href="https://www.codecogs.com/eqnedit.php?latex=B=\{&space;T,F&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?B=\{&space;T,F&space;\}" title="B=\{ T,F \}" /></a> and all morphisms are mapped to the identity function <a href="https://www.codecogs.com/eqnedit.php?latex=Id_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Id_B" title="Id_B" /></a> so it is obvious the preservation of identities and composition laws are true.
+b. data BooleanFunctor a = Bool
+
+
 
