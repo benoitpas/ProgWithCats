@@ -15,14 +15,23 @@ Because:
 
 3. Also, all sets can be mapped to '3' and all morphims are mapped to <a href="https://www.codecogs.com/eqnedit.php?latex=id_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_{3}" title="id_{3}" /></a>
 
-Because
-* <a href="https://www.codecogs.com/eqnedit.php?latex=F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" title="F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F(id_{s})=id_2=id_{F\(s)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(id_{s})=id_2=id_{F\(s)}" title="F(id_{s})=id_2=id_{F\(s)}" /></a> for all Sets 's' which are not the empty set
-* 
-
 4. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '1' and all sets mapped to '2'
 
-5. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '1' and all sets mapped to '3'
+Because
+* <a href="https://www.codecogs.com/eqnedit.php?latex=F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" title="F(id_{\emptyset})=id_1=id_{F\(\emptyset)}" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=F(id_{s})=id_2=id_{F\(s)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(id_{s})=id_2=id_{F\(s)}" title="F(id_{s})=id_2=id_{F\(s)}" /></a> for all Sets 's' which are not the empty set
+* All morphisms from the empty set to the empty set are mapped to <a href="https://www.codecogs.com/eqnedit.php?latex=id_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_1" title="id_1" /></a>, all morphisms from the empty set to a non empty set are mapped to 'a' and all morphisms from non empty set to non empty sets are mapped to <a href="https://www.codecogs.com/eqnedit.php?latex=id_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?id_2" title="id_2" /></a>. There are no morphisms from non empty set to the empty set (because the empty set does not have any target object).
 
-6. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '2' and all sets mapped to '3'
+For  f : X → Y and g : Y → Z {\displaystyle g\colon Y\to Z, the possible compositions are:
+
+|X|Y|Z|Proof|
+|-|-|-|-----|
+|non empty set|non empty set|non empty set|<a href="https://www.codecogs.com/eqnedit.php?latex=(g&space;\cdot&space;f)&space;=&space;id_2&space;=&space;id_2&space;\cdot&space;\id2&space;=&space;F(g)&space;\cdot&space;F(f)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(g&space;\cdot&space;f)&space;=&space;id_2&space;=&space;id_2&space;\cdot&space;\id2&space;=&space;F(g)&space;\cdot&space;F(f)" title="(g \cdot f) = id_2 = id_2 \cdot \id2 = F(g) \cdot F(f)" /></a>|
+|empty set|non empty set| non empty set|<a href="https://www.codecogs.com/eqnedit.php?latex=F(g&space;\cdot&space;f)&space;=&space;a&space;=&space;id_2&space;\cdot&space;a&space;=&space;F(g)&space;\cdot&space;F(f)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(g&space;\cdot&space;f)&space;=&space;a&space;=&space;id_2&space;\cdot&space;a&space;=&space;F(g)&space;\cdot&space;F(f)" title="F(g \cdot f) = a = id_2 \cdot a = F(g) \cdot F(f)" /></a>|
+|empty set|empty set|non empty set|<a href="https://www.codecogs.com/eqnedit.php?latex=F(g&space;\cdot&space;f)&space;=&space;a&space;=&space;a&space;\cdot&space;id_1&space;=&space;F(g)&space;\cdot&space;F(f)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(g&space;\cdot&space;f)&space;=&space;a&space;=&space;a&space;\cdot&space;id_1&space;=&space;F(g)&space;\cdot&space;F(f)" title="F(g \cdot f) = a = a \cdot id_1 = F(g) \cdot F(f)" /></a>|
+
+
+5. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '1' and all sets mapped to '3' with all morphisms from the empty set to a non empty set are mapped to 'b . a' 
+
+6. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '2' and all sets mapped to '3' and all morphisms from the empty set to a non empty set are mapped to 'b' 
 
 
