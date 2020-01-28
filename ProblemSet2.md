@@ -32,7 +32,7 @@ For  f : X → Y and g : Y → Z {\displaystyle g\colon Y\to Z, the possible com
 
 5. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '1' and all sets mapped to '3' with all morphisms from the empty set to a non empty set are mapped to 'b . a' 
 
-6. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '2' and all sets mapped to '3' and all morphisms from the empty set to a non empty set are mapped to 'b' 
+6. <a href="https://www.codecogs.com/eqnedit.php?latex=\emptyset" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\emptyset" title="\emptyset" /></a> is mapped to '2' and all sets mapped to '3' and all morphisms from the empty set to a non empty set are mapped to 'b
 
 ## Question 2. Constant functors
 a. With <a href="https://www.codecogs.com/eqnedit.php?latex=K_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K_B" title="K_B" /></a> all elements are mapped to set<a href="https://www.codecogs.com/eqnedit.php?latex=B=\{&space;T,F&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?B=\{&space;T,F&space;\}" title="B=\{ T,F \}" /></a> and all morphisms are mapped to the identity function <a href="https://www.codecogs.com/eqnedit.php?latex=Id_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Id_B" title="Id_B" /></a> so it is obvious the preservation of identities and composition laws are true.
@@ -47,5 +47,5 @@ instance Functor BooleanFunctor where
 ```
 
 ## Question 3. The naturality of the diagonal
-
-
+a.
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" title="\delta : id_{Set} \Rightarrow Double" /></a> is a natural transformation because for <a href="https://www.codecogs.com/eqnedit.php?latex=f:c_1&space;->&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:c_1&space;->&space;c_2" title="f:c_1 -> c_2" /></a>,
