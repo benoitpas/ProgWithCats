@@ -36,6 +36,7 @@ For  f : X → Y and g : Y → Z {\displaystyle g\colon Y\to Z, the possible com
 
 ## Question 2. Constant functors
 a. With <a href="https://www.codecogs.com/eqnedit.php?latex=K_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K_B" title="K_B" /></a> all elements are mapped to set<a href="https://www.codecogs.com/eqnedit.php?latex=B=\{&space;T,F&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?B=\{&space;T,F&space;\}" title="B=\{ T,F \}" /></a> and all morphisms are mapped to the identity function <a href="https://www.codecogs.com/eqnedit.php?latex=Id_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Id_B" title="Id_B" /></a> so it is obvious the preservation of identities and composition laws are true.
+
 b.
 
 ```haskell
