@@ -54,6 +54,12 @@ a.
 
   <a href="https://www.codecogs.com/eqnedit.php?latex=F(f)(F(c_1))=(id_{Set}&space;\cdot&space;f)&space;(c_1)=f(c_1)=c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(f)(F(c_1))=(id_{Set}&space;\cdot&space;f)&space;(c_1)=f(c_1)=c_2" title="F(f)(F(c_1))=(id_{Set} \cdot f) (c_1)=f(c_1)=c_2" /></a>
   
-  <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" title="\delta_{c_2} (F(c_2)) = \delta_{c_2}( id_{Set}(c2)) = (c_2,c_2)" /></a>
-
+  <a href="https://www.codecogs.com/eqnedit.php?latex=F(c_2)&space;=&space;id_{Set}(c_2)&space;=&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(c_2)&space;=&space;id_{Set}(c_2)&space;=&space;c_2" title="F(c_2) = id_{Set}(c_2) = c_2" /></a>
   
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" title="\delta_{c_2} (F(c_2)) = \delta_{c_2}( id_{Set}(c2)) = (c_2,c_2)" /></a>
+  
+* <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_{c_1}(F(c_1))&space;=&space;\delta_{c_1}(id_{Set}(c_1))&space;=&space;(c1,c1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_{c_1}(F(c_1))&space;=&space;\delta_{c_1}(id_{Set}(c_1))&space;=&space;(c1,c1)" title="\delta_{c_1}(F(c_1)) = \delta_{c_1}(id_{Set}(c_1)) = (c1,c1)" /></a>
+ 
+  <a href="https://www.codecogs.com/eqnedit.php?latex=G(c_1)&space;=&space;(c1,c1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G(c_1)&space;=&space;(c1,c1)" title="G(c_1) = (c1,c1)" /></a>
+  
+  <a href="https://www.codecogs.com/eqnedit.php?latex=G(f)((c_1,c_1))&space;=&space;Double(f)((c1,c1))&space;=&space;(f(c_1),f(c_1))&space;=&space;(c_2,&space;c_2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G(f)((c_1,c_1))&space;=&space;Double(f)((c1,c1))&space;=&space;(f(c_1),f(c_1))&space;=&space;(c_2,&space;c_2)" title="G(f)((c_1,c_1)) = Double(f)((c1,c1)) = (f(c_1),f(c_1)) = (c_2, c_2)" /></a>
