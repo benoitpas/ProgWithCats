@@ -48,4 +48,12 @@ instance Functor BooleanFunctor where
 
 ## Question 3. The naturality of the diagonal
 a.
-<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" title="\delta : id_{Set} \Rightarrow Double" /></a> is a natural transformation because for <a href="https://www.codecogs.com/eqnedit.php?latex=f:c_1&space;->&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:c_1&space;->&space;c_2" title="f:c_1 -> c_2" /></a>,
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" title="\delta : id_{Set} \Rightarrow Double" /></a> is a natural transformation for <a href="https://www.codecogs.com/eqnedit.php?latex=f:c_1&space;->&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:c_1&space;->&space;c_2" title="f:c_1 -> c_2" /></a> with <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_X(x)&space;=&space;(x,x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_X(x)&space;=&space;(x,x)" title="\delta_X(x) = (x,x)" /></a> because:
+
+* <a href="https://www.codecogs.com/eqnedit.php?latex=F(c_1)=id_{Set}(c_1)=c_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(c_1)=id_{Set}(c_1)=c_1" title="F(c_1)=id_{Set}(c_1)=c_1" /></a>
+
+  <a href="https://www.codecogs.com/eqnedit.php?latex=F(f)(F(c_1))=(id_{Set}&space;\cdot&space;f)&space;(c_1)=f(c_1)=c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(f)(F(c_1))=(id_{Set}&space;\cdot&space;f)&space;(c_1)=f(c_1)=c_2" title="F(f)(F(c_1))=(id_{Set} \cdot f) (c_1)=f(c_1)=c_2" /></a>
+  
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_{c_2}&space;(F(c_2))&space;=&space;\delta_{c_2}(&space;id_{Set}(c2))&space;=&space;(c_2,c_2)" title="\delta_{c_2} (F(c_2)) = \delta_{c_2}( id_{Set}(c2)) = (c_2,c_2)" /></a>
+
+  
