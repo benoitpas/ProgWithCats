@@ -73,3 +73,23 @@ Prelude> let diag x = (x,x)
 Prelude> :show bindings
 diag :: t -> (t, t) = _
 ```
+
+## Question 4. Uniqueness of universal objects
+
+a.
+
+  if t and t' are terminal then it exists 2 morphisms such as:
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=f:t->1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:t->1" title="f:t->1" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=f':t'->1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f':t'->1" title="f':t'->1" /></a>
+
+  We can also define the following 2 morphims:
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g:1->t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g:1->t" title="g:1->t" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g':1->t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g':1->t'" title="g':1->t'" /></a>
+  
+  So we have:
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g'&space;\cdot&space;f&space;:&space;t->t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g'&space;\cdot&space;f&space;:&space;t->t'" title="g' \cdot f : t->t'" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g&space;\cdot&space;f'&space;:&space;t'->t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g&space;\cdot&space;f'&space;:&space;t'->t" title="g \cdot f' : t'->t" /></a>
+  
+  So t and t' are isomorphic
+  
+  
