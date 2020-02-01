@@ -114,5 +114,7 @@ b. The product of {a,b,c} and {b,d,c} is {a,b,c,d}. The operation is the union o
 c. The product of true and false is 'true' (as true implies true and false implies true) so the operation is 'or'.
 
 ## Question 6: Products in Hask
+
 a. swap
+
 ![](swap.svg)
