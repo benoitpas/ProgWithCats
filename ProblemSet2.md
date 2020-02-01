@@ -107,14 +107,12 @@ Both demonstrations rely on function composition
 
 ## Question 5: Products in preorders
 
-a.
+a. As 42 = 3*14 and 27 = 3* 9, their product in that category is 3*14*9 = 378. The operation is the lowest common denominator.
 
-As 42 = 3*14 and 27 = 3* 9, their product in that category is 3*14*9 = 378. The operation is the lowest common denominator.
+b. The product of {a,b,c} and {b,d,c} is {a,b,c,d}. The operation is the union on sets.
 
-b.
+c. The product of true and false is 'true' (as true implies true and false implies true) so the operation is 'or'.
 
-The product of {a,b,c} and {b,d,c} is {a,b,c,d}. The operation is the union on sets.
-
-c.
-
-The product of true and false is 'true' (as true implies true and false implies true) so the operation is 'or'.
+## Question 6: Products in Hask
+a. swap
+![](swap.svg)
