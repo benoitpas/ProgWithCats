@@ -79,16 +79,17 @@ diag :: t -> (t, t) = _
 a.
 
   if t and t' are terminal then it exists 2 morphisms such as:
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=f:t \mapsto 1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:t \mapsto 1" title="f:t \mapsto 1" /></a>
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=f':t' \mapsto 1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f':t' \mapsto 1" title="f':t' \mapsto 1" /></a>
+ 
+  *<a href="https://www.codecogs.com/eqnedit.php?latex=f:t&space;\mapsto&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:t&space;\mapsto&space;1" title="f:t \mapsto 1" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=f':t'&space;\mapsto&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f':t'&space;\mapsto&space;1" title="f':t' \mapsto 1" /></a>
 
   We can also define the following 2 morphisms:
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=g:1 \mapsto t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g:1 \mapsto t" title="g:1 \mapsto t" /></a>
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=g':1 \mapsto t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g':1 \mapsto t'" title="g':1 \mapsto t'" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g:1&space;\mapsto&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g:1&space;\mapsto&space;t" title="g:1 \mapsto t" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g':1&space;\mapsto&space;t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g':1&space;\mapsto&space;t'" title="g':1 \mapsto t'" /></a>
   
   So we have:
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=g'&space;\cdot&space;f&space;:&space;t \mapsto t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g'&space;\cdot&space;f&space;:&space;t \mapsto t'" title="g' \cdot f : t \mapsto t'" /></a>
-  * <a href="https://www.codecogs.com/eqnedit.php?latex=g&space;\cdot&space;f'&space;:&space;t' \mapsto t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g&space;\cdot&space;f'&space;:&space;t' \mapsto t" title="g \cdot f' : t' \mapsto t" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g'&space;\cdot&space;f&space;:&space;t&space;\mapsto&space;t'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g'&space;\cdot&space;f&space;:&space;t&space;\mapsto&space;t'" title="g' \cdot f : t \mapsto t'" /></a>
+  * <a href="https://www.codecogs.com/eqnedit.php?latex=g&space;\cdot&space;f'&space;:&space;t'&space;\mapsto&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g&space;\cdot&space;f'&space;:&space;t'&space;\mapsto&space;t" title="g \cdot f' : t' \mapsto t" /></a>
   
   So t and t' are isomorphic
   
