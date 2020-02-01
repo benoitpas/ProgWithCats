@@ -95,5 +95,12 @@ a.
   
 b.
 
-if p and p' are product of a and b then we have:
+Using fst and snd from lecture 6 I can define an identity function from p=(a,b) to p'=(a,b):
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(id_a&space;\cdot&space;fst&space;,&space;id_b&space;\cdot&space;snd)&space;:&space;p&space;\mapsto&space;p'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(id_a&space;\cdot&space;fst&space;,&space;id_b&space;\cdot&space;snd)&space;:&space;p&space;\mapsto&space;p'" title="(id_a \cdot fst , id_b \cdot snd) : p \mapsto p'" /></a>
   
+The function also works from p' to p so p and p' are isomorphic
+
+c.
+
+Both demonstrations rely on function composition 
