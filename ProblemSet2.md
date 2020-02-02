@@ -154,11 +154,11 @@ F and G being functors we can define:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;\mapsto&space;(F(e),G(e))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;\mapsto&space;(F(e),G(e))" title="e \mapsto (F(e),G(e))" /></a>
 
-and
+because
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_1&space;=&space;F(id_e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_1&space;=&space;F(id_e)" title="\pi_1 = F(id_e)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F(e)&space;=&space;F(id_y&space;\cdot&space;e)&space;=&space;F(id_y)&space;\cdot&space;F(e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(y)&space;=&space;F(id_y&space;\cdot&space;e)&space;=&space;F(id_y)&space;\cdot&space;F(e)" title="F(e) = F(id_y \cdot e) = F(id_y) \cdot F(e)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_2&space;=&space;G(id_e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_2&space;=&space;G(id_e)" title="\pi_2 = G(id_e)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=G(e)&space;=&space;G(id_y&space;\cdot&space;e)&space;=&space;G(id_y)&space;\cdot&space;G(e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?G(e)&space;=&space;G(id_y&space;\cdot&space;e)&space;=&space;G(id_y)&space;\cdot&space;G(e)" title="G(e) = G(id_y \cdot e) = G(id_y) \cdot G(e)" /></a>
 
 ## Question 8: Bifunctors
 
@@ -169,3 +169,5 @@ Implementation of 'bimap' for Either:
   bimapEither f g (Left a) = Left (f a)
   bimapEither f g (Right c) = Right (g c)
   ```
+  
+## Question 9: It is quite fascinating (but still very abstract) how the definition of product can be generalized.
