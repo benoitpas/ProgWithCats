@@ -143,3 +143,29 @@ c. assoc
   ```
   
  assoc is an isomorphism because we can define a morphism assoc' such as <a href="https://www.codecogs.com/eqnedit.php?latex=assoc'&space;\cdot&space;assoc&space;=&space;id_{((a,b),c)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?assoc'&space;\cdot&space;assoc&space;=&space;id_{((a,b),c)}" title="assoc' \cdot assoc = id_{((a,b),c)}" /></a>
+
+## Question 7: The Product of Categories
+
+![](catprod.svg)
+
+F and G being functors we can define:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=E&space;\rightarrow&space;C&space;\cdot&space;D" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E&space;\rightarrow&space;C&space;\cdot&space;D" title="E \rightarrow C \cdot D" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=e&space;\mapsto&space;(F(e),G(e))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;\mapsto&space;(F(e),G(e))" title="e \mapsto (F(e),G(e))" /></a>
+
+and
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_1&space;=&space;F(id_e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_1&space;=&space;F(id_e)" title="\pi_1 = F(id_e)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_2&space;=&space;G(id_e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_2&space;=&space;G(id_e)" title="\pi_2 = G(id_e)" /></a>
+
+## Question 8: Bifunctors
+
+Implementation of 'bimap' for Either:
+
+```haskell
+  bimapEither :: (a -> b) -> (c -> d) -> (Either a c) -> (Either b d)
+  bimapEither f g (Left a) = Left (f a)
+  bimapEither f g (Right c) = Right (g c)
+  ```
