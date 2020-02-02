@@ -112,10 +112,34 @@ a. swap
 
 ![](swap.svg)
 
+  ```haskell
+  swap :: (a,b) -> (b,a)
+  swap (a,b) = (b,a)
+  ```
+  
+  swap is an isomorphism because <a href="https://www.codecogs.com/eqnedit.php?latex=swap&space;\cdot&space;swap&space;=&space;id_{(a,b)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?swap&space;\cdot&space;swap&space;=&space;id_{(a,b)}" title="swap \cdot swap = id_{(a,b)}" /></a>
+
+
 b. unit
 
 ![](unit.svg)
 
+  ```haskell
+  unit :: a -> ((),a)
+  unit a = ((),a)
+  ```
+  unit is an isomorphism because <a href="https://www.codecogs.com/eqnedit.php?latex=snd&space;\cdot&space;unit&space;=&space;id_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?snd&space;\cdot&space;unit&space;=&space;id_a" title="snd \cdot unit = id_a" /></a>
+  
 c. assoc
 
 ![](assoc.svg)
+
+  ```haskell
+  assoc :: (a,(b,c)) -> ((a,b),c)
+  assoc (x,(y,z)) = ((x,y),z)
+  
+  assoc' :: ((a,b),c)) -> (a,(b,c))
+  assoc' ((x,y),z) = (x,(y,z))
+  ```
+  
+ assoc is an isomorphism because we can define a morphism assoc' such as <a href="https://www.codecogs.com/eqnedit.php?latex=assoc'&space;\cdot&space;assoc&space;=&space;id_{((a,b),c)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?assoc'&space;\cdot&space;assoc&space;=&space;id_{((a,b),c)}" title="assoc' \cdot assoc = id_{((a,b),c)}" /></a>
