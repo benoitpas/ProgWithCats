@@ -47,8 +47,7 @@ instance Functor BooleanFunctor where
 ```
 
 ## Question 3. The naturality of the diagonal
-a.
-<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" title="\delta : id_{Set} \Rightarrow Double" /></a> is a natural transformation for <a href="https://www.codecogs.com/eqnedit.php?latex=f:c_1&space;->&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:c_1&space;->&space;c_2" title="f:c_1 -> c_2" /></a> with <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_X(x)&space;=&space;(x,x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_X(x)&space;=&space;(x,x)" title="\delta_X(x) = (x,x)" /></a> because:
+a. <a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;:&space;id_{Set}&space;\Rightarrow&space;Double" title="\delta : id_{Set} \Rightarrow Double" /></a> is a natural transformation for <a href="https://www.codecogs.com/eqnedit.php?latex=f:c_1&space;->&space;c_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:c_1&space;->&space;c_2" title="f:c_1 -> c_2" /></a> with <a href="https://www.codecogs.com/eqnedit.php?latex=\delta_X(x)&space;=&space;(x,x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_X(x)&space;=&space;(x,x)" title="\delta_X(x) = (x,x)" /></a> because:
 
 * <a href="https://www.codecogs.com/eqnedit.php?latex=F(c_1)=id_{Set}(c_1)=c_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F(c_1)=id_{Set}(c_1)=c_1" title="F(c_1)=id_{Set}(c_1)=c_1" /></a>
 
@@ -76,9 +75,7 @@ diag :: t -> (t, t) = _
 
 ## Question 4. Uniqueness of universal objects
 
-a.
-
-  if t and t' are terminal then it exists 2 morphisms such as:
+a. if t and t' are terminal then it exists 2 morphisms such as:
  
   *<a href="https://www.codecogs.com/eqnedit.php?latex=f:t&space;\mapsto&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f:t&space;\mapsto&space;1" title="f:t \mapsto 1" /></a>
   * <a href="https://www.codecogs.com/eqnedit.php?latex=f':t'&space;\mapsto&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f':t'&space;\mapsto&space;1" title="f':t' \mapsto 1" /></a>
@@ -93,17 +90,13 @@ a.
   
   So t and t' are isomorphic
   
-b.
-
-Using fst and snd from lecture 6 I can define an identity function from p=(a,b) to p'=(a,b):
+b. Using fst and snd from lecture 6 I can define an identity function from p=(a,b) to p'=(a,b):
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=(id_a&space;\cdot&space;fst&space;,&space;id_b&space;\cdot&space;snd)&space;:&space;p&space;\mapsto&space;p'" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(id_a&space;\cdot&space;fst&space;,&space;id_b&space;\cdot&space;snd)&space;:&space;p&space;\mapsto&space;p'" title="(id_a \cdot fst , id_b \cdot snd) : p \mapsto p'" /></a>
   
 The function also works from p' to p so p and p' are isomorphic
 
-c.
-
-Both demonstrations rely on function composition 
+c. Both demonstrations rely on function composition 
 
 ## Question 5: Products in preorders
 
@@ -118,3 +111,7 @@ c. The product of true and false is 'true' (as true implies true and false impli
 a. swap
 
 ![](swap.svg)
+
+b. unit
+
+![](unit.svg)
