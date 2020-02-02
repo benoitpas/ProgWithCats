@@ -115,3 +115,7 @@ a. swap
 b. unit
 
 ![](unit.svg)
+
+c. assoc
+
+![](assoc.svg)
