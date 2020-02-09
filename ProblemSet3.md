@@ -31,13 +31,14 @@ b.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=(x,y\rightarrow&space;1)&space;\rightarrow&space;y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(x,y\rightarrow&space;1)&space;\rightarrow&space;y" title="(x,y\rightarrow 1) \rightarrow y" /></a>
 
-Question 2. Catamorphisms
+## Question 2. Catamorphisms
 
-a. 'hello' returns 'True' if the list contains at least one even number and false is all the numbers it contains are odd
+a. 'hello' returns 'True' if the list contains at least one even number and false is all the numbers it contains are odd.
+
 b. implementation of 'product':
 
 ```haskell
 product :: F Int -> Int
 product :: Nil = 1
 product :: Cons n a = n * a
-``
+```
