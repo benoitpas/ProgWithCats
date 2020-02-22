@@ -52,3 +52,29 @@ product :: F Int -> Int
 product :: Nil = 1
 product :: Cons n a = n * a
 ```
+## Question 3. Naturals
+
+a. type Nat2
+
+```haskell
+data Nat2 a = Zero | Succ a
+  deriving Functor
+
+```
+
+b. Fibonnacci
+```haskell
+fibo :: F Int -> Int
+fibo Zero = 1
+fibo (Succ 1) = 1
+fibo (Succ (Succ a) = a + (Succ a)
+```
+
+cata fibo :: Nat2 -> Int
+
+c. coalgebra
+```haskell
+coalg :: Int -> F Int
+coalg 0 = F Zero
+coalg n = F (Succ (pred n))
+```
