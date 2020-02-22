@@ -31,7 +31,15 @@ b. The object is <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbb{X}&
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=(x,y\rightarrow&space;1)&space;\rightarrow&space;y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(x,y\rightarrow&space;1)&space;\rightarrow&space;y" title="(x,y\rightarrow 1) \rightarrow y" /></a>
 
-c. 
+c. The object is <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}" title="\mathbb{N} \rtimes _{\mathbb{B}}\textrm{\underline{1}}" /></a> and
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_1:\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}&space;\rightarrow&space;\mathbb{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_1:\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}&space;\rightarrow&space;\mathbb{N}" title="\pi_1:\mathbb{N} \rtimes _{\mathbb{B}}\textrm{\underline{1}} \rightarrow \mathbb{N}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(n,&space;b&space;\mapsto1)&space;\mapsto&space;n*2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(n,&space;b&space;\mapsto1)&space;\mapsto&space;n*2" title="(n, b \mapsto1) \mapsto n*2" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\pi_2:\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}&space;\rightarrow&space;\underline{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_2:\mathbb{N}&space;\rtimes&space;_{\mathbb{B}}\textrm{\underline{1}}&space;\rightarrow&space;\underline{1}" title="\pi_2:\mathbb{N} \rtimes _{\mathbb{B}}\textrm{\underline{1}} \rightarrow \underline{1}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(n,&space;b&space;\mapsto&space;1)&space;\mapsto&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(n,&space;b&space;\mapsto&space;1)&space;\mapsto&space;1" title="(n, b \mapsto 1) \mapsto 1" /></a>
 
 ## Question 2. Catamorphisms
 
