@@ -64,18 +64,18 @@ data Nat2 a = Zero | Succ a
 
 b. Fibonnacci
 ```haskell
-fibo :: F Int -> Int
-fibo Zero = 0
-fibo (Succ 0) = 1
-fibo (Succ 1) = 1
-fibo (Succ 2) = 3
-```
+fiboF :: (Nat2 (Int,Int)) -> (Int,Int)
+fiboF ZeroF = (1,0)
+fiboF (SuccF (n,m)) = (n+m,n)
 
-cata fibo :: Nat2 -> Int
+fibo :: Fix Nat2 -> Int
+fibo = fst . (cata $ fiboF)
+
+```
 
 c. coalgebra
 ```haskell
-coalg :: Int -> F Int
-coalg 0 = F Zero
-coalg n = F (Succ (pred n))
+coalg :: Int -> Nat2 Int
+coalg 0 = ZeroF
+coalg n = SuccF (pred n)
 ```
