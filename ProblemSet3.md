@@ -65,9 +65,10 @@ data Nat2 a = Zero | Succ a
 b. Fibonnacci
 ```haskell
 fibo :: F Int -> Int
-fibo Zero = 1
+fibo Zero = 0
+fibo (Succ 0) = 1
 fibo (Succ 1) = 1
-fibo (Succ (Succ a) = a + (Succ a)
+fibo (Succ 2) = 3
 ```
 
 cata fibo :: Nat2 -> Int
