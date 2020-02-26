@@ -79,3 +79,23 @@ coalg :: Int -> Nat2 Int
 coalg 0 = ZeroF
 coalg n = SuccF (pred n)
 ```
+## Question 4. Sort
+```haskell
+-- https://hackage.haskell.org/package/data-fix-0.2.0/docs/Data-Fix.html
+import Data.Fix
+
+type Tree a = Fix (T a)
+
+data T a b = Leaf | Node a b
+  deriving Functor
+
+splitCoAlgrebra :: [a] -> T [a] [a]
+splitCoAlgrebra [] = Leaf
+splitCoAlgrebra s = Node s1 s2 where (s1,s2) = split(s)
+
+mergeAlgebra :: Ord a => T [a] [a] -> [a]
+mergeAlgebra Leaf = []
+mergeAlgebra (Node s1 s2) = merge s1 s2
+
+main = print (hylo mergeAlgebra splitCoAlgrebra [3,1,4,1,5,9])
+```
