@@ -99,3 +99,18 @@ mergeAlgebra (Node s1 s2) = merge s1 s2
 
 main = print (hylo mergeAlgebra splitCoAlgrebra [3,1,4,1,5,9])
 ```
+## Question 5. Monoids as List algebras
+
+a. Given a list algebra <a href="https://www.codecogs.com/eqnedit.php?latex=a:List(X)&space;\rightarrow&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:List(X)&space;\rightarrow&space;X" title="a:List(X) \rightarrow X" /></a>, we can define a monoid on the set X with:
+* <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;y&space;\mapsto&space;List(x,y)&space;\rightarrow&space;a(List(x,y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;y&space;\mapsto&space;List(x,y)&space;\rightarrow&space;a(List(x,y))" title="x * y \mapsto List(x,y) \rightarrow a(List(x,y))" /></a>
+* e is such that x * e <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;\mapsto&space;List(x)&space;\rightarrow&space;a(List(x))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;\mapsto&space;List(x)&space;\rightarrow&space;a(List(x))" title="x * e \mapsto List(x) \rightarrow a(List(x))" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;y&space;\mapsto&space;List(y)&space;\rightarrow&space;a(List(y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;y&space;\mapsto&space;List(y)&space;\rightarrow&space;a(List(y))" title="e * y \mapsto List(y) \rightarrow a(List(y))" /></a>
+
+Associativity:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(x&space;*&space;y)&space;*&space;z&space;\mapsto&space;a(List(a(List(x,y)),z)&space;\mapsto&space;List(a(List(x,y)),a(List(z)))&space;\mapsto&space;a(List(x,y,z))&space;\mapsto&space;List(a(List(x)),a(List(y,z)))&space;\mapsto&space;a(List(x),a(List(y,z)))&space;\mapsto&space;x&space;*&space;(y&space;*&space;z)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(x&space;*&space;y)&space;*&space;z&space;\mapsto&space;a(List(a(List(x,y)),z)&space;\mapsto&space;List(a(List(x,y)),a(List(z)))&space;\mapsto&space;a(List(x,y,z))&space;\mapsto&space;List(a(List(x)),a(List(y,z)))&space;\mapsto&space;a(List(x),a(List(y,z)))&space;\mapsto&space;x&space;*&space;(y&space;*&space;z)" title="(x * y) * z \mapsto a(List(a(List(x,y)),z) \mapsto List(a(List(x,y)),a(List(z))) \mapsto a(List(x,y,z)) \mapsto List(a(List(x)),a(List(y,z))) \mapsto a(List(x),a(List(y,z))) \mapsto x * (y * z)" /></a>
+
+Identity
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;\mapsto&space;a(List(x))&space;\mapsto&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;\mapsto&space;a(List(x))&space;\mapsto&space;x" title="x * e \mapsto a(List(x)) \mapsto x" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;x&space;\mapsto&space;a(List(x))&space;\mapsto&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;x&space;\mapsto&space;a(List(x))&space;\mapsto&space;x" title="e * x \mapsto a(List(x)) \mapsto x" /></a>
