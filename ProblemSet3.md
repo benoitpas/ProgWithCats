@@ -103,7 +103,7 @@ main = print (hylo mergeAlgebra splitCoAlgrebra [3,1,4,1,5,9])
 
 a. Given a list algebra <a href="https://www.codecogs.com/eqnedit.php?latex=a:List(X)&space;\rightarrow&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:List(X)&space;\rightarrow&space;X" title="a:List(X) \rightarrow X" /></a>, we can define a monoid on the set X with:
 
-*<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;y&space;\mapsto&space;a(List(x,y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;y&space;\mapsto&space;a(List(x,y))" title="x * y \mapsto a(List(x,y))" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;y&space;\mapsto&space;a(List(x,y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;y&space;\mapsto&space;a(List(x,y))" title="x * y \mapsto a(List(x,y))" /></a>
 
 * e is such that <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;\mapsto&space;a(List(x))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;\mapsto&space;a(List(x))" title="x * e \mapsto a(List(x))" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;y&space;\mapsto&space;a(List(y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;y&space;\mapsto&space;a(List(y))" title="e * y \mapsto a(List(y))" /></a>
 
