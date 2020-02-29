@@ -120,10 +120,13 @@ b. Given a monoid <a href="https://www.codecogs.com/eqnedit.php?latex=(X,*,e)" t
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" title="a: (head,tail) \mapsto head * a(tail)" /></a>
 
+Where head is the first element of the list and tail the rest of the list. If the list only has one element then:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,[]])&space;\mapsto&space;head" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,[]])&space;\mapsto&space;head" title="a: (head,[]]) \mapsto head" /></a>
 
-c. 
+c. The monoid can be used to build lists of elements  while the algebra reduces the list to an element.
 
-Where head is the first element of the list and tail the rest of the list. If the list only has one element then:
+Question 6
+
 
 
