@@ -115,3 +115,15 @@ Identity
 <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;=&space;a(List(x))&space;=&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;=&space;a(List(x))&space;=&space;x" title="x * e = a(List(x)) = x" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;x&space;=&space;a(List(x))&space;=&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;x&space;=&space;a(List(x))&space;=&space;x" title="e * x = a(List(x)) = x" /></a>
+
+b. Given a monoid <a href="https://www.codecogs.com/eqnedit.php?latex=(X,*,e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(X,*,e)" title="(X,*,e)" /></a> we can construct a list algrebra which uses the monoid to 'accumulate' all the x in the list in a final item x:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" title="a: (head,tail) \mapsto head * a(tail)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,[]])&space;\mapsto&space;head" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,[]])&space;\mapsto&space;head" title="a: (head,[]]) \mapsto head" /></a>
+
+c. 
+
+Where head is the first element of the list and tail the rest of the list. If the list only has one element then:
+
+
