@@ -126,7 +126,12 @@ Where head is the first element of the list and tail the rest of the list. If th
 
 c. The monoid can be used to build lists of elements  while the algebra reduces the list to an element.
 
-Question 6
+## Question 6
+
+```haskell
+main :: IO ()
+main = print "hello"
+```
 
 
 
