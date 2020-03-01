@@ -126,12 +126,34 @@ Where head is the first element of the list and tail the rest of the list. If th
 
 c. The monoid can be used to build lists of elements  while the algebra reduces the list to an element.
 
-## Question 6
+## Question 6 Hello World
 
 ```haskell
 main :: IO ()
 main = print "hello"
 ```
 
+## Question 7 The tree monad
+
+As Applicative is a superclass of Monad and Functor a superclass of Applicative, all 3 are implemented.
+
+```haskell
+  data Tree a = Leaf a | Node (Tree a) (Tree a) 
+    deriving Show
+
+instance Functor Tree where
+    fmap f (Leaf v) = Leaf (f v)
+    fmap f (Node t1 t2) = Node (fmap f t1) (fmap f t2)
+
+instance Applicative Tree where
+   pure v = Leaf v
+   (<*>) (Leaf f) (Leaf v) = Leaf (f v)
+   (<*>) (Leaf f) (Node t1 t2) = Node (fmap f t1) (fmap f t2)
+   (<*>) (Node t1 t2) t3 = Node (t1 <*> t3) (t2 <*> t3)
 
 
+instance Monad Tree where
+    return v = Leaf v
+    (Leaf v) >>= f = (f v)
+    (Node t1 t2) >>= f = Node (t1 >>= f) (t2 >>= f)
+```
