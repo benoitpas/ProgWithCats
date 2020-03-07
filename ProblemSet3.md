@@ -157,3 +157,12 @@ instance Monad Tree where
     (Leaf v) >>= f = (f v)
     (Node t1 t2) >>= f = Node (t1 >>= f) (t2 >>= f)
 ```
+
+## Question 9 Continuation monad
+
+a. Continuation Functor
+
+```haskell
+instance Functor (Cont s) where
+  fmap f (Cont f2) = Cont (f2 . (\f3 -> f3 . f ))
+```
