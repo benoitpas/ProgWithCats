@@ -79,3 +79,90 @@ coalg :: Int -> Nat2 Int
 coalg 0 = ZeroF
 coalg n = SuccF (pred n)
 ```
+## Question 4. Sort
+```haskell
+-- https://hackage.haskell.org/package/data-fix-0.2.0/docs/Data-Fix.html
+import Data.Fix
+
+type Tree a = Fix (T a)
+
+data T a b = Leaf | Node a b
+  deriving Functor
+
+splitCoAlgrebra :: [a] -> T [a] [a]
+splitCoAlgrebra [] = Leaf
+splitCoAlgrebra s = Node s1 s2 where (s1,s2) = split(s)
+
+mergeAlgebra :: Ord a => T [a] [a] -> [a]
+mergeAlgebra Leaf = []
+mergeAlgebra (Node s1 s2) = merge s1 s2
+
+main = print (hylo mergeAlgebra splitCoAlgrebra [3,1,4,1,5,9])
+```
+## Question 5. Monoids as List algebras
+
+a. Given a list algebra <a href="https://www.codecogs.com/eqnedit.php?latex=a:List(X)&space;\rightarrow&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:List(X)&space;\rightarrow&space;X" title="a:List(X) \rightarrow X" /></a>, we can define a monoid on the set X with:
+
+* <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;y&space;=&space;a(List(x,y))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;y&space;=&space;a(List(x,y))" title="x * y = a(List(x,y))" /></a>
+
+* e is such that <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;=&space;a(List(x))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;=&space;a(List(x))" title="x * e = a(List(x))" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;x&space;=&space;a(List(x))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;x&space;=&space;a(List(x))" title="e * x = a(List(x))" /></a>
+Associativity:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=(x&space;*&space;y)&space;*&space;z&space;=&space;a(List(a(List(x,y)),z)&space;=&space;List(a(List(x,y)),a(List(z)))&space;=&space;a(List(x,y,z))&space;=&space;List(a(List(x)),a(List(y,z)))&space;=&space;a(List(x,a(List(y,z)))&space;=&space;x&space;*&space;(y&space;*&space;z)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(x&space;*&space;y)&space;*&space;z&space;=&space;a(List(a(List(x,y)),z)&space;=&space;List(a(List(x,y)),a(List(z)))&space;=&space;a(List(x,y,z))&space;=&space;List(a(List(x)),a(List(y,z)))&space;=&space;a(List(x,a(List(y,z)))&space;=&space;x&space;*&space;(y&space;*&space;z)" title="(x * y) * z = a(List(a(List(x,y)),z) = List(a(List(x,y)),a(List(z))) = a(List(x,y,z)) = List(a(List(x)),a(List(y,z))) = a(List(x,a(List(y,z))) = x * (y * z)" /></a>
+
+Identity
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;*&space;e&space;=&space;a(List(x))&space;=&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;*&space;e&space;=&space;a(List(x))&space;=&space;x" title="x * e = a(List(x)) = x" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=e&space;*&space;x&space;=&space;a(List(x))&space;=&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;*&space;x&space;=&space;a(List(x))&space;=&space;x" title="e * x = a(List(x)) = x" /></a>
+
+b. Given a monoid <a href="https://www.codecogs.com/eqnedit.php?latex=(X,*,e)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(X,*,e)" title="(X,*,e)" /></a> we can construct a list algrebra which uses the monoid to 'accumulate' all the x in the list in a final item x:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,tail)&space;\mapsto&space;head&space;*&space;a(tail)" title="a: (head,tail) \mapsto head * a(tail)" /></a>
+
+Where head is the first element of the list and tail the rest of the list. If the list only has one element then:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a:&space;(head,[]])&space;\mapsto&space;head" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a:&space;(head,[]])&space;\mapsto&space;head" title="a: (head,[]]) \mapsto head" /></a>
+
+c. The monoid can be used to build lists of elements  while the algebra reduces the list to an element.
+
+## Question 6 Hello World
+
+```haskell
+main :: IO ()
+main = print "hello"
+```
+
+## Question 7 The tree monad
+
+As Applicative is a superclass of Monad and Functor a superclass of Applicative, all 3 are implemented.
+
+```haskell
+  data Tree a = Leaf a | Node (Tree a) (Tree a) 
+    deriving Show
+
+instance Functor Tree where
+    fmap f (Leaf v) = Leaf (f v)
+    fmap f (Node t1 t2) = Node (fmap f t1) (fmap f t2)
+
+instance Applicative Tree where
+   pure v = Leaf v
+   (<*>) (Leaf f) (Leaf v) = Leaf (f v)
+   (<*>) (Leaf f) (Node t1 t2) = Node (fmap f t1) (fmap f t2)
+   (<*>) (Node t1 t2) t3 = Node (t1 <*> t3) (t2 <*> t3)
+
+
+instance Monad Tree where
+    return v = Leaf v
+    (Leaf v) >>= f = (f v)
+    (Node t1 t2) >>= f = Node (t1 >>= f) (t2 >>= f)
+```
+
+## Question 9 Continuation monad
+
+a. Continuation Functor
+
+```haskell
+instance Functor (Cont s) where
+  fmap f (Cont f2) = Cont (f2 . (\f3 -> f3 . f ))
+```
