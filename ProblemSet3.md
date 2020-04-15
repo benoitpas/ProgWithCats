@@ -165,4 +165,8 @@ a. Continuation Functor
 ```haskell
 instance Functor (Cont s) where
   fmap f (Cont f2) = Cont (f2 . (\f3 -> f3 . f ))
+
+instance Applicative (Cont s) where
+  pure v = Cont (\f -> f v)
+  (Cont fab) <*> (Cont f2) = Cont (\f -> (f2  (\a -> fab (\f3 -> f(f3(a))))))
 ```
