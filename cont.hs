@@ -1,15 +1,20 @@
 data Cont s x = Cont ((x -> s) -> s)
 
+applyCont (Cont f) v = f v
+evalCont (Cont f) = f (\v -> v)
+showCont (Cont f) = f show
+
 instance Functor (Cont s) where
   fmap fab (Cont f2) = Cont (f2 . (\f3 -> f3 . fab))
   fmap fab (Cont f2) = Cont (\f -> (f2  (\a -> ((\f3 -> f3 (fab(a))) f))))
 
 instance Applicative (Cont s) where
   pure v = Cont (\f -> f v)
-  (Cont fab) <*> (Cont f2) = Cont (\f -> (f2  (\a -> fab (\f3 -> f(f3(a))))))
--- instance Monad (Cont s) where
---    return f = Cont (\f2 -> f . f2)
---    fmap f (Cont ((x -> s) -> s)) = 0
+  (Cont fab) <*> (Cont f2) = Cont (\f -> (f2  (\a -> fab (\f3 -> f (f3 a)))))
+
+instance Monad (Cont s) where
+  return v = Cont (\f -> f  v)
+  (Cont f1) >>= c2 = Cont (\f -> f1 (\a -> applyCont (c2 a) f))
 
 -- Continuations without 'Cont' type
 add :: Int -> Int -> Int
@@ -39,26 +44,22 @@ times2 = \x -> x * 2
 repStr n = replicate n (head (show n))
 twice f = f . f
 
-evalCont (Cont f) = f (\v -> v)
-showCont (Cont f) = f show
-
-cZero = Cont (\f -> (f::Int->Int) 0)
+-- Continuations using 'Cont'
+cZero = Cont (\f -> f 0)
 cOne = Cont (\f -> f 1)
 cOne_ = cPlus1 <*> cZero
 evalCZero =  evalCont cZero
-mapCZero = (fmap (\x -> x+1) cZero)
-cPlus1 = Cont (\f -> f plus1)
-cPlus1_ = fmap (+) cOne
+mapCZero = (fmap (\x -> x+1) cZero) -- equal to cOne
+cPlus1 = fmap (+) cOne
+cPlus1_ = Cont (\f -> f plus1)
 evalCPlus1 = evalCont cPlus1
 cPlus1Time2 = fmap plus1 (Cont (\f -> times2))
 
-cTimes2 = Cont (\f -> f (\x -> x * 2))
---cPlus1Time2_ = cPlus1 <*> cTimes2
---cLength = Cont (\f -> length)
-cRepStr = Cont (\f -> f(\n -> replicate n))
---cTwice = Cont (\f2 -> (\f -> (f2 . f . f )))
---vTapp = evalCont (tapp cZero)
+cTimes2 = \x -> Cont (\f -> f ( x * 2))
+cTwo = cOne >>= cTimes2
+cFour = cOne >>= cTimes2 >>= cTimes2
 
+cRepStr = \n ->  Cont (\f -> f(replicate n))
+cFourOne = (cFour >>= cRepStr) <*> cOne
 main = 
---  putStrLn (pythagoras_cps 10 2 show)
-  putStrLn (show evalCZero)
+  putStrLn (showCont cFourOne)

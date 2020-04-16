@@ -169,4 +169,8 @@ instance Functor (Cont s) where
 instance Applicative (Cont s) where
   pure v = Cont (\f -> f v)
   (Cont fab) <*> (Cont f2) = Cont (\f -> (f2  (\a -> fab (\f3 -> f(f3(a))))))
+
+instance Monad (Cont s) where
+  return v = Cont (\f -> f  v)
+  (Cont f1) >>= c2 = Cont (\f -> f1 (\a -> applyCont (c2 a) f))
 ```
